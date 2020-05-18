@@ -30,7 +30,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             contentType: "application/json;",
-            url: "/api/admin",
+            url: "http://localhost:8081/api/admin",
             data: JSON.stringify(formData),
             dataType: 'json',
             complete: [

@@ -2,7 +2,7 @@ function deleteUser(id) {
     var res = confirm('Are you sure ??');
     if (res) {
         $.ajax({
-            url: '/api/admin/' + id,
+            url: 'http://localhost:8081/api/admin/' + id,
             method: 'DELETE',
             success: function () {
                 getAllUsers();

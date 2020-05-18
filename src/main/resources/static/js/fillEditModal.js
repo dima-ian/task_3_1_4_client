@@ -1,6 +1,6 @@
 function fillEditModal(id) {
     $.ajax({
-        url: '/api/admin/' + id,
+        url: 'http://localhost:8081/api/admin/' + id,
         method: "GET",
         dataType: "json",
         success: function (data) {

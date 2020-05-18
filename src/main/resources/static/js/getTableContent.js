@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 function getAllUsers() {
     $.ajax({
-        url: "/api/admin",
+        url: "http://localhost:8081/api/users",
         method: "GET",
         dataType: "json",
         success: function (data) {

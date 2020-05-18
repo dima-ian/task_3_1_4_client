@@ -29,7 +29,7 @@ $(document).ready(function () {
         $.ajax({
             type: "PUT",
             contentType: "application/json;",
-            url: "/api/admin/" + $("#modalId").val(),
+            url: "http://localhost:8081/api/admin/" + $("#modalId").val(),
             data: JSON.stringify(formData),
             dataType: 'json',
             complete: [
